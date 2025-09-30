@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #4a00e0, #8e2de2);
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    /* hidden by default */
+    transition: left 0.4s ease;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+    padding-top: 20px;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.close-btn {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 18px;
+    font-size: 18px;
+    background: #4a00e0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+    background: #8e2de2;
+}
+
+main {
+    margin: auto;
+    padding: 40px;
+    flex: 1;
+    text-align: center;
+}

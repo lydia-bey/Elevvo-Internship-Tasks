@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapsible Sidebar</title>
+  <link rel="stylesheet" href="task1.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2><i class="fa-solid fa-layer-group"></i> MyLogo</h2>
+      <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+    </div>
+    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#"><i class="fa-solid fa-user"></i> About</a>
+    <a href="#"><i class="fa-solid fa-briefcase"></i> Services</a>
+    <a href="#"><i class="fa-solid fa-envelope"></i> Contact</a>
+  </div>
+
+  <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+  <main>
+    <h1>Welcome To My Page </h1>
+    <p>This is a demo of a modern collapsible sidebar with icons and smooth animation.</p>
+  </main>
+
+  <script src="task1.js"></script>
+</body>
+</html>
